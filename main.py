@@ -4,10 +4,29 @@ import matplotlib.pyplot as plt
 from Clusters.Kmeans import Kmeans
 from Clusters.DBSCAN import DBSCANN
 from Clusters.hierarchical_clustering import hierarchical_clustering
-#________________________________classiers
-from classifiction.RandomForestClassifier import RandomForestClassifierr
-from classifiction.SupportVectorMachineClassifier import SupportVectorMachineClass
-from classifiction.LogisticRegressionClassifier import LogisticRegressionClass
+#________________________________Classifiers
+from classification.RandomForestClassifier import RandomForestClassifierr
+from classification.LogisticRegressionClassifier import LogisticRegressionClass
+from classification.adaboostclassifier import AdaBoostClassifierr
+from classification.DecisionTree import DecisionTreeClassifierr
+from classification.GradientBoostingMachines import GradientBoostingClassifierr
+from classification.HistGradientBoostingClassifier import HistGradientBoostingClassifierr
+from classification.IsolationForestclassifier import IsolationForestClassifier
+from classification.k_Nearest_Neighbors import KNeighborsClassifier
+from classification.NaiveBayes import NaiveBayesClassifier
+from classification.ExtraTreesClassifier import ExtraTreesClassifierr
+
+
+
+
+
+
+
+
+
+
+
+
 while True:
     print("""
     1- Clusters 
@@ -42,8 +61,8 @@ while True:
     elif Choice == "2":
         Array2 = []
         Array2.append(RandomForestClassifierr())
-        Array2.append(SupportVectorMachineClass())
         Array2.append(LogisticRegressionClass())
+        Array2.append()
         pass
     elif Choice == "3":
         pass
