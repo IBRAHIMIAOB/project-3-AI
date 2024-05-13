@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, f1_score
 
 def RandomForestClassifierr():
     print("""
---------------------------------------------------
+------------------------------------------------------------------
 Random Forest Classifier""")
     data = pd.read_csv('DataSets/diabetes_prediction_dataset.csv')
     data['gender'] = data['gender'].map({'Male': 0, 'Female': 1})
