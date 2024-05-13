@@ -8,50 +8,42 @@ from Clusters.hierarchical_clustering import hierarchical_clustering
 from classifiction.RandomForestClassifier import RandomForestClassifierr
 from classifiction.SupportVectorMachineClassifier import SupportVectorMachineClass
 from classifiction.LogisticRegressionClassifier import LogisticRegressionClass
-print("""
-1- Clusters 
-2- classification
-3- regressions""")
-      Choice = input("Enter your choice : ")
-     if Choice == "1":
+while True:
+    print("""
+    1- Clusters 
+    2- classification
+    3- regressions""")
+    Choice = input("Enter your choice : ")
+    if Choice == "1":
         Array = []
         Array.append(Kmeans())
         Array.append(DBSCANN())
         Array.append(hierarchical_clustering())
         data = np.array(Array)
-
         algorithms = ['Kmeans', 'DBSCAN', 'Hierarchical clustering']
         numbers1 = data[:, 0]
         numbers2 = data[:, 1]
-
         bar_width = 0.35
-
         r1 = np.arange(len(numbers1))
         r2 = [x + bar_width for x in r1]
-
         plt.bar(r1, numbers1, color='b', width=bar_width, edgecolor='grey', label='Silhouette Score')
         plt.bar(r2, numbers2, color='r', width=bar_width, edgecolor='grey', label='Davies-Bouldin score')
-
         plt.xlabel('Algorithms', fontweight='bold')
         plt.xticks([r + bar_width/2 for r in range(len(numbers1))], algorithms)
-
         plt.ylabel('Numbers')
         plt.title('Comparison of Algorithms')
         plt.legend()
-
         plt.show()
         
         print("givin the Plot DBSCAN is The best Clustering algorithm for Spine DataSet since it has High Silhouette Score and low Davies-Bouldin Score \n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ")
         
         
-        pass
+        
     elif Choice == "2":
         Array2 = []
         Array2.append(RandomForestClassifierr())
         Array2.append(SupportVectorMachineClass())
         Array2.append(LogisticRegressionClass())
-
-
         pass
     elif Choice == "3":
         pass
