@@ -1,7 +1,9 @@
 from sklearn.svm import SVC
 
 def SupportVectorMachineClass():
-  
+    print("""
+        ------------------------------------------------------------------
+          Support Vector Machine Class""")
     def __init__(self, data_path):
         self.data = pd.read_csv(data_path)
         self.data['gender'] = self.data['gender'].map({'Male': 0, 'Female': 1})
@@ -18,4 +20,8 @@ def SupportVectorMachineClass():
 
         accuracy = accuracy_score(y_test, y_pred)
         f1 = f1_score(y_test, y_pred, average='weighted')
+        print("---------------------------------------")
+        print("Accuracy:", accuracy)
+        print("F1 Score:", f1)
+        print("---------------------------------------")
         return accuracy, f1

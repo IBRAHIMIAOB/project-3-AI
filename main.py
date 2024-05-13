@@ -6,13 +6,14 @@ from Clusters.DBSCAN import DBSCANN
 from Clusters.hierarchical_clustering import hierarchical_clustering
 #________________________________classiers
 from classifiction.RandomForestClassifier import RandomForestClassifierr
-while True: 
-    print("""
+from classifiction.SupportVectorMachineClassifier import SupportVectorMachineClass
+from classifiction.LogisticRegressionClassifier import LogisticRegressionClass
+print("""
 1- Clusters 
 2- classification
 3- regressions""")
-    Choice = input("Enter your choice : ")
-    if Choice == "1":
+      Choice = input("Enter your choice : ")
+     if Choice == "1":
         Array = []
         Array.append(Kmeans())
         Array.append(DBSCANN())
@@ -47,7 +48,10 @@ while True:
     elif Choice == "2":
         Array2 = []
         Array2.append(RandomForestClassifierr())
-        
+        Array2.append(SupportVectorMachineClass())
+        Array2.append(LogisticRegressionClass())
+
+
         pass
     elif Choice == "3":
         pass
