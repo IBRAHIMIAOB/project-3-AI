@@ -31,4 +31,3 @@ AdaBoost Classifier""")
     print("---------------------------------------")
     return [accuracy , f1]
 
-AdaBoostClassifierr()

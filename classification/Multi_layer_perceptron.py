@@ -31,4 +31,3 @@ Multi-layer Perceptron Classifier""")
     
     return [accuracy , f1]
 
-MLPClassifierFunc()

@@ -47,4 +47,3 @@ HistGradientBoosting Classifier""")
 
     return [accuracy, f1]
 
-HistGradientBoostingClassifierr()

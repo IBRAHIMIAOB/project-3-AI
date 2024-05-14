@@ -35,4 +35,3 @@ k-Nearest Neighbors (kNN) Classifier""")
 
     return [accuracy, f1]
 
-kNNClassifierr()

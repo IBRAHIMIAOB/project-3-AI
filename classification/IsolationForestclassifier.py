@@ -33,4 +33,3 @@ Isolation Forest Classifier""")
     
     return [accuracy, f1]
 
-IsolationForestClassifier()

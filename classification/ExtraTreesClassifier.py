@@ -34,4 +34,3 @@ Extra Trees Classifier""")
 
     return [accuracy , f1]
 
-ExtraTreesClassifierr()

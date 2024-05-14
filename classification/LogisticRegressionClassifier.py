@@ -26,4 +26,3 @@ Logistic Regression """)
       print("F1 Score:", f1)
       print("---------------------------------------")
       return [accuracy, f1]
-LogisticRegressionClass()

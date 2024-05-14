@@ -38,4 +38,3 @@ Decision Tree Classifier""")
     
     return [accuracy , f1]
 
-DecisionTreeClassifierr()

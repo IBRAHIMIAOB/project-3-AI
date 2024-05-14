@@ -31,4 +31,3 @@ Naive Bayes Classifier""")
     print("---------------------------------------")
     return [accuracy, f1]
 
-NaiveBayesClassifier()
